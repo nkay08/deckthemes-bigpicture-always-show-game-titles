@@ -1,11 +1,99 @@
 {
-    "name": "Always Show Game Labels",
-    "author": "nkay08",
-    "version": "v1.0",
-    "description": "Always show the game title under the capsule in the Steam Deck / Big Picture Mode library and home screens.",
-    "target": "Tweak",
-    "manifest_version": 8,
-    "inject": {
-        "shared.css": ["bigpicture"]
+  "name": "Always Show Game Labels",
+  "author": "nkay08",
+  "version": "v1.0",
+  "description": "Always show the game title under the capsule in the Steam Deck / Big Picture Mode library and home screens.",
+  "target": "Tweak",
+  "manifest_version": 8,
+  "inject": {
+    "shared.css": [
+      "bigpicture"
+    ]
+  },
+  "patches": {
+    "Library": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "library.css": [
+            "bigpicture"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Carousel": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "carousel.css": [
+            "bigpicture"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Font size": {
+      "type": "slider",
+      "default": "4",
+      "values": {
+        "0": {
+          "--asgl-font-size": [
+            "0.50em",
+            "SP"
+          ]
+        },
+        "1": {
+          "--asgl-font-size": [
+            "0.55em",
+            "SP"
+          ]
+        },
+        "2": {
+          "--asgl-font-size": [
+            "0.60em",
+            "SP"
+          ]
+        },
+        "3": {
+          "--asgl-font-size": [
+            "0.65em",
+            "SP"
+          ]
+        },
+        "4": {
+          "--asgl-font-size": [
+            "0.7em",
+            "SP"
+          ]
+        },
+        "5": {
+          "--asgl-font-size": [
+            "0.75em",
+            "SP"
+          ]
+        },
+        "6": {
+          "---asgl-font-size": [
+            "0.85em",
+            "SP"
+          ]
+        },
+        "7": {
+          "--asgl-font-size": [
+            "0.9em",
+            "SP"
+          ]
+        },
+        "8": {
+          "---asgl-font-size": [
+            "0.95em",
+            "SP"
+          ]
+        }
+      }
     }
+  }
 }

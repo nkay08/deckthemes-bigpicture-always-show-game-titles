@@ -10,17 +10,6 @@
  * current hashed names via css_translations.json, so they survive Steam updates.
  */
 
-/* Library: always show the label. */
-.GamepadLibrary .LibraryItemBox.Panel + div[id] {
-  display: block !important;
-}
-
-/* Home (recent games): the focused/hovered item already shows its title
- * natively, so only force the label for the items that are not hovered/focused. */
-.InRecentGames.LibraryItemBox.Panel:not(:hover, :focus) + div[id] {
-  display: block !important;
-}
-
 /* Shared label formatting. */
 .LibraryItemBox.Panel + div[id] {
   text-align: center;
@@ -29,5 +18,5 @@
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
-  font-size: 0.7em; /* 0.85em looks better for square capsules */
+  font-size: var(--asgl-font-size); /* 0.85em looks better for square capsules */
 }

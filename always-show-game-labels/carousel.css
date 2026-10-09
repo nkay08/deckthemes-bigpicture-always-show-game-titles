@@ -1,0 +1,5 @@
+/* Home (recent games): the focused/hovered item already shows its title
+ * natively, so only force the label for the items that are not hovered/focused. */
+.InRecentGames.LibraryItemBox.Panel:not(:hover, :focus) + div[id] {
+  display: block !important;
+}

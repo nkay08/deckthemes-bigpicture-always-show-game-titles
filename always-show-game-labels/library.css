@@ -1,0 +1,4 @@
+/* Library: always show the label. */
+.GamepadLibrary .LibraryItemBox.Panel + div[id] {
+  display: block !important;
+}
