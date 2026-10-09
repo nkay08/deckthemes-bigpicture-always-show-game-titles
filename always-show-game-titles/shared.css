@@ -1,4 +1,10 @@
 /*
+ * SPDX-FileCopyrightText: 2026 Niklas Klipphahn <n.klipp@nkay.info>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+/*
  * Always show game labels under the capsules.
  *
  * The game title element has no class of its own - only an id (e.g. "<<rex>>")

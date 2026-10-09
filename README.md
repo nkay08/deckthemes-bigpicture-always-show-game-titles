@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 Niklas Klipphahn <n.klipp@nkay.info>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Always Show Game Labels
 
 A CSS Loader theme that always shows the game title under the capsule in the

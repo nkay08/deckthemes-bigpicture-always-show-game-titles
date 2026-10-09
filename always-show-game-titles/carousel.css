@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2026 Niklas Klipphahn <n.klipp@nkay.info>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 /* Home (recent games): the focused/hovered item already shows its title
  * natively, so only force the label for the items that are not hovered/focused. */
 .InRecentGames.LibraryItemBox.Panel:not(:hover, :focus) + div[id] {
