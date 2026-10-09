@@ -1,0 +1,11 @@
+{
+    "name": "Always Show Game Labels",
+    "author": "nkay08",
+    "version": "v1.0",
+    "description": "Always show the game title under the capsule in the Steam Deck / Big Picture Mode library and home screens.",
+    "target": "Tweak",
+    "manifest_version": 8,
+    "inject": {
+        "shared.css": ["bigpicture"]
+    }
+}
