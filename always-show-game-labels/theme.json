@@ -1,99 +1,102 @@
 {
-  "name": "Always Show Game Labels",
-  "author": "nkay08",
-  "version": "v1.0",
-  "description": "Always show the game title under the capsule in the Steam Deck / Big Picture Mode library and home screens.",
-  "target": "Tweak",
-  "manifest_version": 8,
-  "inject": {
-    "shared.css": [
-      "bigpicture"
-    ]
-  },
-  "patches": {
-    "Library": {
-      "type": "checkbox",
-      "default": "Yes",
-      "values": {
-        "Yes": {
-          "library.css": [
-            "bigpicture"
-          ]
-        },
-        "No": {}
+   "name": "Always Show Game Labels",
+   "author": "nkay08",
+   "version": "v1.0",
+   "description": "Always show the game title under the capsule in the Steam Deck / Big Picture Mode library and home screens.",
+   "manifest_version": 9,
+   "tabs": {
+      "default": [
+         "bigpicture"
+      ]
+   },
+   "inject": {
+      "shared.css": []
+   },
+   "patches": {
+      "Library": {
+         "type": "checkbox",
+         "default": "Yes",
+         "values": {
+            "Yes": {
+               "library.css": [
+                  "bigpicture"
+               ]
+            },
+            "No": {}
+         }
+      },
+      "Carousel": {
+         "type": "checkbox",
+         "default": "Yes",
+         "values": {
+            "Yes": {
+               "carousel.css": [
+                  "bigpicture"
+               ]
+            },
+            "No": {}
+         }
+      },
+      "Font size (em)": {
+         "type": "slider",
+         "default": "0.70",
+         "values": {
+            "0.50": {
+               "--asgl-font-size": [
+                  "0.50em"
+               ]
+            },
+            "0.55": {
+               "--asgl-font-size": [
+                  "0.55em"
+               ]
+            },
+            "0.60": {
+               "--asgl-font-size": [
+                  "0.60em"
+               ]
+            },
+            "0.65": {
+               "--asgl-font-size": [
+                  "0.65em"
+               ]
+            },
+            "0.70": {
+               "--asgl-font-size": [
+                  "0.7em"
+               ]
+            },
+            "0.75": {
+               "--asgl-font-size": [
+                  "0.75em"
+               ]
+            },
+            "0.80": {
+               "---asgl-font-size": [
+                  "0.8em"
+               ]
+            },
+            "0.85": {
+               "---asgl-font-size": [
+                  "0.85em"
+               ]
+            },
+            "0.90": {
+               "--asgl-font-size": [
+                  "0.9em"
+               ]
+            },
+            "0.95": {
+               "---asgl-font-size": [
+                  "0.95em"
+               ]
+            },
+            "1.0": {
+               "---asgl-font-size": [
+                  "1em"
+               ]
+            }
+         }
       }
-    },
-    "Carousel": {
-      "type": "checkbox",
-      "default": "Yes",
-      "values": {
-        "Yes": {
-          "carousel.css": [
-            "bigpicture"
-          ]
-        },
-        "No": {}
-      }
-    },
-    "Font size": {
-      "type": "slider",
-      "default": "4",
-      "values": {
-        "0": {
-          "--asgl-font-size": [
-            "0.50em",
-            "SP"
-          ]
-        },
-        "1": {
-          "--asgl-font-size": [
-            "0.55em",
-            "SP"
-          ]
-        },
-        "2": {
-          "--asgl-font-size": [
-            "0.60em",
-            "SP"
-          ]
-        },
-        "3": {
-          "--asgl-font-size": [
-            "0.65em",
-            "SP"
-          ]
-        },
-        "4": {
-          "--asgl-font-size": [
-            "0.7em",
-            "SP"
-          ]
-        },
-        "5": {
-          "--asgl-font-size": [
-            "0.75em",
-            "SP"
-          ]
-        },
-        "6": {
-          "---asgl-font-size": [
-            "0.85em",
-            "SP"
-          ]
-        },
-        "7": {
-          "--asgl-font-size": [
-            "0.9em",
-            "SP"
-          ]
-        },
-        "8": {
-          "---asgl-font-size": [
-            "0.95em",
-            "SP"
-          ]
-        }
-      }
-    }
-  }
+   }
 }

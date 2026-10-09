@@ -18,5 +18,5 @@
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
-  font-size: var(--asgl-font-size); /* 0.85em looks better for square capsules */
+  font-size: var(--asgl-font-size); /* 0.70em is fine normally, 0.85em looks better for square capsules (steamgriddb) */
 }
