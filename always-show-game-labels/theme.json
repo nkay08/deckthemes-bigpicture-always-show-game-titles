@@ -39,60 +39,60 @@
       },
       "Font size (em)": {
          "type": "slider",
-         "default": "0.70",
+         "default": "5",
          "values": {
-            "0.50": {
+            "1": {
                "--asgl-font-size": [
                   "0.50em"
                ]
             },
-            "0.55": {
+            "2": {
                "--asgl-font-size": [
                   "0.55em"
                ]
             },
-            "0.60": {
+            "3": {
                "--asgl-font-size": [
                   "0.60em"
                ]
             },
-            "0.65": {
+            "4": {
                "--asgl-font-size": [
                   "0.65em"
                ]
             },
-            "0.70": {
+            "5": {
                "--asgl-font-size": [
                   "0.7em"
                ]
             },
-            "0.75": {
+            "6": {
                "--asgl-font-size": [
                   "0.75em"
                ]
             },
-            "0.80": {
-               "---asgl-font-size": [
+            "7": {
+               "--asgl-font-size": [
                   "0.8em"
                ]
             },
-            "0.85": {
-               "---asgl-font-size": [
+            "8": {
+               "--asgl-font-size": [
                   "0.85em"
                ]
             },
-            "0.90": {
+            "9": {
                "--asgl-font-size": [
                   "0.9em"
                ]
             },
-            "0.95": {
-               "---asgl-font-size": [
+            "10": {
+               "--asgl-font-size": [
                   "0.95em"
                ]
             },
-            "1.0": {
-               "---asgl-font-size": [
+            "11": {
+               "--asgl-font-size": [
                   "1em"
                ]
             }

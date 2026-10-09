@@ -2,4 +2,5 @@
  * natively, so only force the label for the items that are not hovered/focused. */
 .InRecentGames.LibraryItemBox.Panel:not(:hover, :focus) + div[id] {
   display: block !important;
+  font-size: var(--asgl-font-size);
 }

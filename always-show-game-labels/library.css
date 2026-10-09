@@ -1,4 +1,5 @@
 /* Library: always show the label. */
 .GamepadLibrary .LibraryItemBox.Panel + div[id] {
   display: block !important;
+  font-size: var(--asgl-font-size);
 }
