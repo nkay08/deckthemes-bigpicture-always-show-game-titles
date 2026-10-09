@@ -14,7 +14,8 @@ Steam Deck / Big Picture Mode library and home screens.
 Copy this folder to `~/homebrew/themes/`:
 
 ```sh
-cp -r "Always-Show-Game-Labels" ~/homebrew/themes/
+mkdir -p ~/homebrew/themes
+cp -r "always-show-game-titles" ~/homebrew/themes/
 ```
 
 Then open CSS Loader's Quick Access menu, scroll to the bottom and press
